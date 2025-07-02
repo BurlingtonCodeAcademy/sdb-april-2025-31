@@ -3,6 +3,10 @@ import Student from "../models/student.model.js"
 
 const router = Router()
 
+// GET - /api/student - get all students
+
+// GET - /api/student/:id - get student by ID
+
 // POST - /api/student/new - create a new student
 router.post("/new", async (req, res) => {
     try {
@@ -27,5 +31,11 @@ router.post("/new", async (req, res) => {
         console.error(error)
     }
 })
+
+// PUT - /api/student/:id - update student by id
+
+// DELETE - /api/student/:id - delete a student by id
+
+// BONUS - DELETE - /api/student - delete all students
 
 export default router;
